@@ -1,0 +1,21 @@
+{
+  "name": "country-explorer-with-backend",
+  "version": "1.0.0",
+  "description": "Country explorer Node.js application",
+  "homepage": "https://github.com/alialfattoa/country-explorer-with-backend#readme",
+  "bugs": {
+    "url": "https://github.com/alialfattoa/country-explorer-with-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alialfattoa/country-explorer-with-backend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js -e ejs,js,css,html,jpg,png,scss"
+  }
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="home-page">
+    <header>
+      <div id="header-bar">
+        <img src="./assets/world.png" alt="world icon" />
+        <h1>Country Explorer</h1>
+      </div>
+    </header>
+    <form id="filter-form">
+      <div>
+        <p>Search by Country Name:</p>
+        <input
+          id="country-name-input"
+          type="text"
+          name="country-name"
+          placeholder="Enter Country Name"
+          pattern="[A-Za-z]*"
+        />
+      </div>
+
+      <div>
+        <p>Select a Region:</p>
+        <select id="region-input">
+          <option selected>All Regions</option>
+          <option>Europe</option>
+          <option>Asia</option>
+          <option>Africa</option>
+          <option>Oceania</option>
+          <option>Americas</option>
+        </select>
+      </div>
+
+      <div>
+        <p>Search by Population:</p>
+        <input
+          id="population-input"
+          type="number"
+          name="country-population"
+          placeholder="0"
+          min="0"
+          max="1500000000"
+        />
+      </div>
+    </form>
+    <div id="error-message"></div>
+
+    <main>
+      <div id="country-cards-container"></div>
+    </main>
+
+    <div id="btn-div">
+      <button id="show-more-btn">Show More</button>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
